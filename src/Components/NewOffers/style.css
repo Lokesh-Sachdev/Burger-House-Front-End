@@ -1,0 +1,8 @@
+.img-responsive {
+  height: 400px;
+  object-fit: cover;
+}
+
+.container {
+  box-shadow: 5px 10px 18px #888;
+}

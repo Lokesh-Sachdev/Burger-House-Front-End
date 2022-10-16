@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Roboto+Condensed&display=swap");
+
+#form-container {
+  text-align: center;
+  margin: 100px;
+  color: #3f210d;
+}
+
+#form-container h1 {
+  font-family: "bevan";
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 400px;
+  padding: 10px;
+}
+
+@media (max-width: 850px) {
+  input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 200px;
+  }
+}

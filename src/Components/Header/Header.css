@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Roboto+Condensed&display=swap");
+
+.header {
+  font-family: "Roboto Condensed", monospace;
+  background: rgb(254, 198, 78);
+  background: radial-gradient(
+    circle,
+    rgba(254, 198, 78, 1) 0%,
+    rgba(255, 199, 77, 1) 35%,
+    rgba(254, 193, 64, 1) 100%
+  );
+  color: #3f210d;
+  padding: 35px 35px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav ul li {
+  letter-spacing: 2px;
+}
+
+.nav-items {
+  text-align: end;
+}
+
+.nav-items div {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title span {
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px dashed black;
+  padding: 10px;
+}
+
+.header-title h1,
+h2 {
+  font-family: "Bevan";
+  font-size: 120px;
+  text-shadow: 2px 2px white;
+  margin: 0;
+}
+
+.header-title h2 {
+  font-size: 60px;
+}
+
+.header-title-img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+@media (max-width: 1050px) {
+  .header-title h1 {
+    font-size: 80px;
+    margin-top: 10px;
+  }
+  .header-title span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav {
+    margin-bottom: 20px;
+  }
+  .header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-title h1 {
+    font-size: 50px;
+  }
+
+  .header-title h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 740px) {
+  .nav {
+    display: block;
+    align-items: center;
+  }
+  .nav-items div {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
